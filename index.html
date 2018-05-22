@@ -1,1 +1,103 @@
-Hello World
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../favicon.ico">
+    <title>Lovelin Edward</title>
+
+    <!-- Bootstrap core CSS -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  </head>
+ 
+<style>
+.my-image-container{
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+  background: #ffffff91;
+  margin: auto;
+}
+.my-image-container img{
+  width: 100%;
+  height: 100%;
+}
+.intro{
+  margin-top: 60px;
+}
+.welcome-text{
+  overflow: hidden;
+  height: 40px;
+}
+.welcome-text div{
+  transform: translateY(40px);
+  animation: scroll-effect 10s infinite;
+}
+
+@keyframes scroll-effect{
+  10%{
+    transform: translateY(0px);
+  }
+  25%{
+    transform: translateY(0px); 
+  }
+  30%{
+    transform: translateY(-40px);
+  }
+  75%{
+    transform: translateY(-40px);
+  }
+  80%{
+    transform: translateY(-90px);
+  }
+  95%{
+    transform: translateY(-90px);
+  }
+  100%{
+    transform: translateY(-130px);
+  }
+}
+</style>
+<body>
+  <header>
+      <div class="bg-dark collapse" id="navbarHeader" style="">
+        <div class="container">
+          <div class="row">
+          </div>
+        </div>
+      </div>
+      <div class="navbar navbar-dark bg-dark box-shadow">
+        <div class="container d-flex justify-content-between">
+          <a href="#" class="navbar-brand d-flex align-items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
+          </a>
+          <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </div>
+  </header>
+  <main>
+    <section class="intro text-center">
+      <div class = "container">
+        <!--  -->
+        <div class= "welcome-text">
+          <div>
+            <h2> வணக்கம் </h2>
+            <h2> Hello,</h2>
+            <h2> 🙏 </h2>
+          </div>
+        </div>
+        <div class="my-image-container">
+          <img src="/img/pixel.png">
+        </div>
+        <h2> I am </h2>
+        <h1> Lovelin Edward</h1>
+      </div>
+    </section>
+  </main>
+  
+</body>
+
+</html>
