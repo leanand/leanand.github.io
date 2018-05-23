@@ -31,27 +31,56 @@
   height: 40px;
 }
 .welcome-text div{
-  transform: translateY(40px);
   animation: scroll-effect 10s infinite;
 }
-
+.site-header{
+  height: 60px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.site-nav{
+  text-align: right;
+  /*margin-left: 50%;*/
+}
+.site-nav a{
+  padding: 10px;
+}
+.position{
+  padding-top: 20px
+}
+.mission{
+  font-style: italic;
+  padding-top: 10px;
+}
+.menu-icon{
+  display: inline-block;
+  cursor: pointer;
+}
+.menu-icon div{
+  width: 30px;
+  height: 3px;
+  background-color: #333;
+  margin: 7px 0;
+}
 @keyframes scroll-effect{
-  10%{
+  0%{
+    transform: translateY(40px);
+  }
+  2%{
     transform: translateY(0px);
   }
-  25%{
+  30%{
     transform: translateY(0px); 
   }
-  30%{
-    transform: translateY(-40px);
+  35%{
+    transform: translateY(-44px);
   }
-  75%{
-    transform: translateY(-40px);
+  65%{
+    transform: translateY(-44px);
   }
-  80%{
+  70%{
     transform: translateY(-90px);
   }
-  95%{
+  97%{
     transform: translateY(-90px);
   }
   100%{
@@ -60,23 +89,28 @@
 }
 </style>
 <body>
-  <header>
-      <div class="bg-dark collapse" id="navbarHeader" style="">
-        <div class="container">
-          <div class="row">
-          </div>
-        </div>
+  <div class="container">
+    <header>
+    <div class="navbar site-header ">
+      <div class="col-3"></div>
+      <div class="col-md-9 d-none d-md-block">
+        <nav class="site-nav ">
+          <a href="#"> Home </a>
+          <a href="#"> Projects </a>
+          <a href="#"> Resume </a>
+          <a href="#"> Github </a>
+          <a href="#"> Contact </a>
+        </nav>  
       </div>
-      <div class="navbar navbar-dark bg-dark box-shadow">
-        <div class="container d-flex justify-content-between">
-          <a href="#" class="navbar-brand d-flex align-items-center">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
-          </a>
-          <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </div>
+      <div class="menu-icon d-sm-block d-md-none">
+        <div></div>
+        <div></div>
+        <div></div>
       </div>
+      <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button> -->
+    </div>
   </header>
   <main>
     <section class="intro text-center">
@@ -84,7 +118,7 @@
         <!--  -->
         <div class= "welcome-text">
           <div>
-            <h2> வணக்கம் </h2>
+            <h2> வணக்கம்</h2>
             <h2> Hello,</h2>
             <h2> 🙏 </h2>
           </div>
@@ -92,12 +126,14 @@
         <div class="my-image-container">
           <img src="/img/pixel.png">
         </div>
-        <h2> I am </h2>
+        <h3> I am </h3>
         <h1> Lovelin Edward</h1>
+        <h4 class="position"> Full Stack Developer </h4> 
+        <h4 class="mission"> In mission to learn building large scale reliable distributed systems.</h4>
       </div>
     </section>
   </main>
-  
+  </div>
 </body>
 
 </html>
